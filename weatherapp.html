@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./weatherapp.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather of your city</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="search" id="searchmain">
+        <input type="search" placeholder="Search places" id="searchbox" />
+        <label id="bx-out" for="searchbox"
+          ><i class="bx bx-search-alt" id="searchbtn" style="color: #000000"></i
+        ></label>
+      </div>
+      <section id="invisible">
+        <div class="weatherimg">
+          <img
+            id="weather-image"
+            src="./js-images/clear.png"
+            alt="Weather image is loading"
+            class="wimg"
+          />
+        </div>
+        <div class="weather">
+          <h1 id="tempreture">33 °C</h1>
+          <h3 id="cityname">Lucknow</h3>
+          <h5 id="time"></h5>
+        </div>
+        <div class="weathergrid">
+          <div id="box1">Haze</div>
+          <div id="box2">Pressure: 3%</div>
+          <div class="box3">
+            <img
+              class="bottomlogo humiditylogo"
+              src="./js-images/humidity.png"
+              alt="Wait"
+            />
+            <div class="humidity">
+              <span id="humidper">18%</span>
+              <h3>Humidity</h3>
+            </div>
+          </div>
+          <div class="box4">
+            <img
+              class="bottomlogo windlogo"
+              src="./js-images/wind.png"
+              alt="Wait"
+            />
+            <div class="wind">
+              <span id="windkm">10 Km/h</span>
+              <h3>Wind Speed</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./weatherapp.js"></script>
+  </body>
+</html>

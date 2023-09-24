@@ -1,0 +1,124 @@
+*{
+    font-family: 'EB Garamond', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+}
+html, body{
+    background-image: linear-gradient(to bottom right , rgb(21, 156, 104) -36% , rgb(25, 136, 151) , rgb(16, 55, 163), rgb(41, 20, 160) 166% );    background-size: cover;
+    background-image: url(./js-images/25501.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.158);
+    border-radius: 10px;
+    width: 450px;
+    backdrop-filter: blur(6px);
+}
+.search{
+    width: 460px;
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    position: relative;
+    top: -17px;
+    left: -5px;
+}
+#searchbox{
+    border: none;
+    width: 90%;
+    font-size: 1.05rem;  
+    padding-left: 15px ;
+    border-radius: 50px;
+}
+#searchbox:focus{
+    border: none; 
+    outline: none;
+}
+.bx{
+    padding: 4.5px 5px;
+    font-size: 1.8rem;
+}
+#bx-out{
+    /* border: 1px solid rgb(162, 162, 162);
+    border-radius: 50px; */
+    height: 40px;
+    width: 40px;
+    margin: 4px 5px;
+
+}
+.wimg{
+    height: 130px;
+    
+}
+.weatherimg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+
+}
+.weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#tempreture{
+    font-size: 4.4rem;
+}
+#cityname{
+    font-size: 2.3rem;
+    margin: 10px 0;
+}
+#time{
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
+    padding: 3px 0;
+    background-color: #e0e0e0ed;
+}
+.weathergrid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin: 45px 10px;
+    row-gap: 15px;
+}
+.bottomlogo{
+    height: 50px;
+    align-self: center;
+}
+.box3, .box4{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#humidper, #windkm{
+    font-size: 1.5rem;
+}
+#box1 , #box2 {
+    font-size: 1.8rem;
+    text-align: left;
+}
+#box1{
+    padding: 0 28px;
+}
+#box2{
+    padding: 0 27px;
+}
+#invisible{
+    display: none;
+}
